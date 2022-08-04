@@ -50,13 +50,13 @@ class BinanceTask:
         return count
 
     def price_spread_calculator_loop(self, q2_results):
-        iteration_data = self.__price_spread_calculator(q2_results)
+        iteration_data = self._price_spread_calculator(q2_results)
         while (True):
             print()
-            iteration_data = self.__price_spread_calculator(q2_results, True, iteration_data)
+            iteration_data = self._price_spread_calculator(q2_results, True, iteration_data)
             time.sleep(10)
 
-    def __price_spread_calculator(self, q2_results, iterate=False, delta_list=[0, 0, 0, 0, 0]):
+    def _price_spread_calculator(self, q2_results, iterate=False, delta_list=[0, 0, 0, 0, 0]):
         i = 0
         for asset in q2_results:
             r = requests.get('https://api.binance.com/api/v3/depth', params={'symbol': asset[0], 'limit': 1}).json()
