@@ -1,6 +1,6 @@
 # Binance Home Assignment
 
-The questions that are solved in this code:
+The questions that are solved in this assignment:
 1. Print the top 5 symbols with quote asset BTC and the highest volume over the last 24 hours in descending order.
 2. Print the top 5 symbols with quote asset USDT and the highest number of trades over the last 24 hours in descending order.
 3. Using the symbols from Q1, what is the total notional value of the top 200 bids and asks currently on each order book?
