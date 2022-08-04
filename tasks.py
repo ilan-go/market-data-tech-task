@@ -41,7 +41,7 @@ class BinanceTask:
             count_asks = self.notional_value_counter(r['asks'])
             print(f"Notional value for {asset[0]} bids is: {count_bids}")
             print(f"Notional value for {asset[0]} asks is: {count_asks}")
-        print("")
+        print()
 
     def notional_value_counter(self, order_book_list):
         count = 0
@@ -73,7 +73,7 @@ class BinanceTask:
         print(f"Asset symbol:       {value}:")
         for tuple in asset_list:
             print(f"{tuple[0]}            {tuple[1]}")
-        print("")
+        print()
 
 
 def main():
